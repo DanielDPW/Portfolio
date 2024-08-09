@@ -1,11 +1,16 @@
-import Link from 'next/link';
 import React from 'react';
 
+import { SiGmail} from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
 
 export default function Navbar() {
   const socials = [
+    {
+      link: "mailto:danielpedrosawu5705@gmail.com",
+      label: "Gmail",
+      Icon: SiGmail,
+    },
     {
       link: "https://github.com/DanielDPW",
       label: "GitHub",
@@ -26,9 +31,9 @@ export default function Navbar() {
       <div className="flex items-center gap-4 md:gap-6 mt-4 md:mt-0">
         {socials.map((social, index) => {
           return (
-            <Link href={social.link} key={index} aria-label={social.label}>
+            <a href={social.link} key={index} aria-label={social.label}>
               <social.Icon className="w-4 h-4 md:w-5 md:h-5 hover:scale-150 transition-transform" />
-            </Link>
+            </a>
           );
         })}
       </div>
