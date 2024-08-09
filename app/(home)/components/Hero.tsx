@@ -1,15 +1,31 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image'; // Import Image from next/image
 
 export default function Hero() {
   return (
-    <div className= "text-center xl:text-left">
-        <span>Computer Science Student</span>
-        <h1 className= "h1">Hi! My name is <br/><span>Daniel Pedrosa Wu</span></h1>
-        <p>
-            A passionate and driven Computer Science student with a keen interest in technology. 
-            As someone who is new to the field, I'm excited to dive into the world of Computer Science, 
-            eager to hone my skills and make meaningful contributions to our evergrowing society.
-        </p>
+    <div className="min-h-[60vh] flex flex-col md:flex-row items-center justify-between p-4">
+        <div className="text-center md:text-left flex-1 p-4">
+            <span className="block text-sm md:text-base">Computer Science Student</span>
+            <h1 className="text-4xl md:text-6xl font-bold">
+                Hi! My name is <br />
+                <span className="text-4xl md:text-6xl underline underline-offset-8 decoration-red-800">Daniel Pedrosa Wu</span>
+            </h1>
+            <p className="text-base md:text-lg mt-4">
+                A passionate and driven Computer Science student with a keen interest in technology. 
+                As someone who is new to the field, I'm excited to dive into the world of Computer Science, 
+                eager to hone my skills and make meaningful contributions to our ever-growing society.
+            </p>
+        </div>
+        <div className="w-60 h-60 md:w-80 md:h-80 mt-4 md:mt-0">
+            <Image
+                src="/assets/portrait.png"
+                priority
+                alt="Portrait of Daniel Pedrosa Wu"
+                width={300}
+                height={300}
+                className="rounded-full" // Apply the circular frame
+            />
+        </div>
     </div>
-  )
+  );
 }
