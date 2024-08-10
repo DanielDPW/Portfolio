@@ -1,7 +1,7 @@
 import { HoverEffect } from '@/components/ui/card-hover-effect';
 import React from 'react';
 import { GiThink } from "react-icons/gi";
-import { RiTeamLine } from "react-icons/ri";
+import { BiMath } from "react-icons/bi";
 import { SiGodotengine } from "react-icons/si";
 import { SiPython } from "react-icons/si";
 import { SiC } from "react-icons/si";
@@ -14,8 +14,8 @@ export default function Skills() {
       Icon: GiThink,
     },
     {
-      text: "Teamwork",
-      Icon: RiTeamLine,
+      text: "Mathematics",
+      Icon: BiMath,
     },
     {
       text: "Godot",
