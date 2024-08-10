@@ -17,12 +17,18 @@ export default function Hero() {
           As someone who is new to the field, I'm excited to dive into the world of Computer Science, 
           eager to hone my skills and make meaningful contributions to our ever-growing society.
         </p>
+        <p className="text-base md:text-lg mt-6 font-medium">
+          Currently interested in{" "}
+          <span className="font-semibold text-red-500">Software Engineering</span>,{" "}
+          <span className="font-semibold text-red-500">Machine Learning</span>, and{" "}
+          <span className="font-semibold text-red-500">Game Development</span>.
+        </p>
       </div>
       <div className="order-1 md:order-2 w-48 h-48 md:w-60 md:h-60 lg:w-80 lg:h-80 flex justify-center items-center">
         <Image
           src="/assets/portrait.png"
           priority
-          alt=""
+          alt="Daniel Pedrosa Wu"
           width={300}
           height={300}
           className="rounded-full"
