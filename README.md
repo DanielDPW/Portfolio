@@ -32,10 +32,10 @@ Project ini adalah sebuah portfolio sederhana untuk keperluan Tugas Career Path 
 <br/>
 
 ### Bonus
-Deployment tidak dikerjakan
-Tampilan yang responsif selesai
-Penggunaan basis data tidak dikerjakan
-Kreativitas selesai
+1. Deployment (tidak dikerjakan)
+2. Tampilan yang responsif (selesai)
+3. Penggunaan basis data (tidak dikerjakan)
+4. Kreativitas (selesai)
 
 ### Difficulty
 Kesulitannya berasal dari pertama kali belajar webdev sehingga banyak hal-hal baru.
